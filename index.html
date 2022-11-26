@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="contenedor-nav" id="nav">
+        <div class="logo">
+            <div>
+				<a href=""><img class="img-logo" src="./assets/img/logo.png" alt="" id="logoNav"></a>
+            </div>
+            <div class="container-search input-icono" id="searchNav">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="items-nav">
+            <button class="btnNav" id="rolBtn">#rol</button>
+            <button  class="btnNav" id="multijugadorBtn">#multijugador</button>
+            <button  class="btnNav" id="gratisBtn">#gratis</button>
+            <button  class="btnNav"  id="variedadBtn">#variedad</button>
+        </div>
+        <div class="icons">
+            <i class="fa fa-shopping-cart" id="cart" aria-hidden="true"></i>
+            <div class="container-hambur">
+                <button class="hambur">
+                    <span class="top-line"></span>
+                    <span class="middle-line"></span>
+                    <span class="bottom-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+	<div class="menu-hamburgesa">
+		<div class="container-hambur">
+			<div class="container-hambur-user">
+				<div class="img-user">
+					<img src="assets/img/profile.png" alt="">
+				</div>
+				<div class="name-user">
+					<h4>Doggy</h4>
+				</div>
+			</div>
+			<div class="container-redes">
+				<ul>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div class="container-items">
+				<ul>
+					<li><i class="fa fa-user" aria-hidden="true"></i> Perfil</li>
+					<li><i class="fa fa-bookmark" aria-hidden="true"></i> Guardados</li>
+					<li><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesion</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bread spinner-on">
+		<h4>HOME / <a href="index.html">HOME</a></h4>
+	</div>
+	<div class="container-spinner">
+
+		<div class="spinner-circle"></div>
+		<div class="progress-bar">%0</div>
+		<div class="progress-container">
+			<div class="progress"></div>
+		</div>
+		<p class="text-progress">Por favor espera estamos generando algunas reglas.</p>
+	  </div>
+		<div class="container-carrito-games spinner-on">
+			<div class="carrito-games">
+				<h3>Carrito de compras</h3>
+				<div class="container-cart">
+					<div class="card-carrito">
+						<div class="img-cart">
+							<img src="assets/img/pagos/2.png" alt="">
+						</div>
+						<div class="info-cart">
+							<h4>Clash Royale</h4>
+							<p>Rol</p>
+							<h6>$1300</h6>
+						</div>
+						<div class="cantidades">
+							<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+							<h6>01</h6>
+							<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="container-cart">
+					<div class="card-carrito">
+						<div class="img-cart">
+							<img src="assets/img/pagos/4.png" alt="">
+						</div>
+						<div class="info-cart">
+							<h4>Plantas vs Zombies</h4>
+							<p>Estrategia</p>
+							<h6>$500</h6>
+						</div>
+						<div class="cantidades">
+							<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+							<h6>01</h6>
+							<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="container-cart">
+					<div class="card-carrito">
+						<div class="img-cart">
+							<img src="assets/img/pagos/5.png" alt="">
+						</div>
+						<div class="info-cart">
+							<h4>StarCraft</h4>
+							<p>Accion</p>
+							<h6>$2000</h6>
+						</div>
+						<div class="cantidades">
+							<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+							<h6>01</h6>
+							<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	<div class="spinner-on">
+		<div class="title-novedad">
+			<h2>Juego novedad</h2>
+		</div>
+		<div class="container-lanzamiento">
+			<div class="img-lanzamiento">
+				<a href="./lanzamiento.html"><img src="./assets/img/lanzamiento.png" alt=""></a>
+			</div>
+			<div class="info-lanzamiento">
+				<h2>Novedad</h2>
+				<p>God of War llegara el proximo 9 de noviembre a todas las plataformas digitales</p>
+				<p>Sony Santa Monica lleva trabajando en God of War: Ragnarok, con Cory Balrog como director creativo y Eric Williams a la
+					cabeza, desde el lanzamiento de la anterior entrega, pero a mediados de 2019 aún aparecían ofertas de trabajo destinadas 
+					a seguir engordando el equipo de desarrollo.</p>
+			</div>
+		</div>
+	</div>
+
+    <main class="spinner-on"> 
+		<h2 class="title-carrousel">Solo para ti</h2>
+		<div class="games-recomendadas" id="soloParaTi">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda flecha-i-personalizado"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+				
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">Fornite</h3>
+								<p class="item-info">Battle Royale</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/1.jpg" alt=""></a>
+						</div>
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">God Of War Ragnarok</h3>
+								<p class="item-info">Aventura</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/2.jpeg" alt=""></a>
+						</div>
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">Fifa 23</h3>
+								<p class="item-info">Futbol</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/3.jpeg" alt=""></a>
+						</div>
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">Fall Guys</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/4.jpeg" alt=""></a>
+						</div>
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">Halo Infinite</h3>
+								<p class="item-info">Historia y Accion</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/5.jpeg" alt=""></a>
+						</div>
+						<div class="game large personalizado">
+							<div class="info-game">
+								<h3 class="item-info">Minecraft</h3>
+								<p class="item-info">Historia y Aventura</p>
+							</div>
+							<a href="#"><img src="./assets/img/paraTi/6.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha flecha-d-pagos" class="flecha-derecha flecha-d-personalizado"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+
+		<h2 class="title-carrousel">Pagos</h2>
+		<div class="games-recomendadas" id="Pagos">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda flecha-i-pagos"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Call Of Duty</h3>
+									<p class="item-info">Game</p>
+									<p class="item-info">$1100</p>
+
+								</div>
+								<div class="comprado">
+									<button><a href="#demo-modal">Agregar al carrito</a></button>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/1.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Clash Royale</h3>
+									<p class="item-info">Estrategia</p>
+									<p class="item-info">$1300</p>
+								</div>
+								<div class="comprado">
+									<h4>En el carrito</h4>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/2.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Among Us</h3>
+									<p class="item-info">Rol</p>
+									<p class="item-info">$400</p>
+
+								</div>
+								<div class="comprado">
+									<button><a href="#demo-modal">Agregar al carrito</a></button>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/3.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Plantas Zombies</h3>
+									<p class="item-info">Estrategia</p>
+									<p class="item-info">$500</p>
+								</div>
+								<div class="comprado">
+									<h4>En el carrito</h4>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/4.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">StraCraft</h3>
+									<p class="item-info">Accion</p>
+									<p class="item-info">$2000</p>
+
+								</div>
+								<div class="comprado">
+									<h4>En el carrito</h4>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/5.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Mortal Kombat</h3>
+									<p class="item-info">Accion</p>
+									<p class="item-info">$1499</p>
+
+								</div>
+								<div class="comprado">
+									<button><a href="#demo-modal">Agregar al carrito</a></button>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/6.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Assasins Creed</h3>
+									<p class="item-info">Historia</p>
+									<p class="item-info">$79</p>
+
+								</div>
+								<div class="comprado">
+									<button><a href="#demo-modal">Agregar al carrito</a></button>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/7.png" alt=""></a>
+						</div>
+						<div class="game pagos">
+							<div class="info-game zona-pagos">
+								<div class="datos">
+									<h3 class="item-info">Battlefront 2</h3>
+									<p class="item-info">Disparos</p>
+									<p class="item-info">$199</p>
+
+								</div>
+								<div class="comprado">
+									<button><a href="#demo-modal">Agregar al carrito</a></button>
+								</div>
+							</div>
+							<a href="#"><img src="./assets/img/pagos/8.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha flecha-d-pagos" class="flecha-derecha flecha-d-pagos"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		
+		<h2 class="title-carrousel">Gratis</h2>
+		<div class="games-recomendadas" id="Gratis">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda gratis" class="flecha-izquierda flecha-i-gratis"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+	
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">EFootball</h3>
+								<p class="item-info">Futbol</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/1.jpeg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">Counter Strike</h3>
+								<p class="item-info">Disparos</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/2.jpg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">League Of Legends</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/3.jpg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">Valorant</h3>
+								<p class="item-info">Disparos</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/4.jpg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">Smite</h3>
+								<p class="item-info">Estrategia</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/5.jpeg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">PUGB</h3>
+								<p class="item-info">Disparos</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/6.jpeg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">GTA 5</h3>
+								<p class="item-info">Historia y Accion</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/7.jpeg" alt=""></a>
+						</div>
+						<div class="game gratis">
+							<div class="info-game">
+								<h3 class="item-info">Jedi Fallen Order</h3>
+								<p class="item-info">Historia</p>
+							</div>
+							<a href="#"><img src="./assets/img/gratis/8.jpeg" alt=""></a>
+						</div>
+					</div>
+				</div>
+	
+				<button role="button" id="flecha-derecha" class="flecha-derecha flecha-d-gratis"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<h2 class="title-carrousel">Variedad</h2>
+		<div class="games-recomendadas" id="Variedad">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda variedad" class="flecha-izquierda flecha-i-variedad"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+	
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">Life 2</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/1.jpeg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">NFL: Madden</h3>
+								<p class="item-info">Futbol Americano</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/2.png" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">NBA 2K22</h3>
+								<p class="item-info">Basquet</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/3.jpg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">Assasins Creed</h3>
+								<p class="item-info">Historia</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/4.jpeg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">Dragon Ball</h3>
+								<p class="item-info">Aventura</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/5.jpg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">Naruto</h3>
+								<p class="item-info">Aventura</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/6.jpeg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">God Of War 2</h3>
+								<p class="item-info">Accion y Historia</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/7.jpeg" alt=""></a>
+						</div>
+						<div class="game variedad">
+							<div class="info-game">
+								<h3 class="item-info">Far Cry 5</h3>
+								<p class="item-info">Historia</p>
+							</div>
+							<a href="#"><img src="./assets/img/variedad/8.jpeg" alt=""></a>
+						</div>
+					</div>
+				</div>
+	
+				<button role="button" id="flecha-derecha" class="flecha-derecha flecha-d-variedad"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<h2 class="title-carrousel">Multijugador</h2>
+		<div class="games-recomendadas" id="Multijugador">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda multijugador" class="flecha-izquierda flecha-i-multijugador"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+	
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Rocket League</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/1.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Take Two</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/2.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Overcooked</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/3.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Mooving Out</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/4.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Among Us</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/5.jpg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Zombies Royale</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/6.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Brawl Stars</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/7.jpeg" alt=""></a>
+						</div>
+						<div class="game multijugador">
+							<div class="info-game">
+								<h3 class="item-info">Brawlhala</h3>
+								<p class="item-info">MultiJugador</p>
+							</div>
+							<a href="#"><img src="./assets/img/multijugador/8.jpeg" alt=""></a>
+						</div>
+					</div>
+				</div>
+	
+				<button role="button" id="flecha-derecha" class="flecha-derecha flecha-d-multijugador"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<h2 class="title-carrousel">Rol</h2>
+		<div class="games-recomendadas" id="Rol">
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda flecha-i-rol"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">4 En Linea</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="juego.html"><img src="./assets/img/como-jugar1.png" alt=""></a>
+						</div>
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">Eternium</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/rol/2.jpg" alt=""></a>
+						</div>
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">Dark Souls</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/rol/3.jpeg" alt=""></a>
+						</div>
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">The Witcher</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/rol/4.jpg" alt=""></a>
+						</div>
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">Portal Knigths</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/rol/5.jpeg" alt=""></a>
+						</div>
+						<div class="game large rol">
+							<div class="info-game">
+								<h3 class="item-info">TorchLight</h3>
+								<p class="item-info">Rol</p>
+							</div>
+							<a href="#"><img src="./assets/img/rol/6.jpeg" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha flecha-d-pagos" class="flecha-derecha flecha-d-rol"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</main>
+
+	<div id="demo-modal" class="modal">
+		<div class="modal__content">
+			<h1>Tu juego se ha agregado al carrito</h1>
+			<p>Gracias por confiar en nosotros!</p>
+			<a href="#" class="modal__close">&times;</a>
+		</div>
+	</div>
+
+    <footer class="spinner-on">
+        <div class="contenedorFooter">
+            <div class="seccion-redes">
+                <img src="./assets/img/logo.png" class="logoFooter" alt="">
+                <div class="redes">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="items-footer">
+                <div class="item">
+                    <h4 class="titulos">Nosotros</h4>
+                    <p class="item-foot">¿Quienes somos?</p>
+                    <p class="item-foot">Compania</p>
+                    <p class="item-foot">Blog</p>
+                </div>
+                <div class="item">
+                    <h4 class="titulos">Ayuda</h4>
+                    <p class="item-foot">Preguntas Frecuentes</p>
+                    <p class="item-foot">Como comprar</p>
+                    <p class="item-foot">Contactanos</p>
+                </div>
+                <div class="item">
+                    <h4 class="titulos">Formas de pago</h4>
+                    <p class="item-foot"><i class="fa fa-paypal pago" aria-hidden="true"></i> PayPal</p>
+                    <p class="item-foot"><i class="fa fa-btc pago" aria-hidden="true"></i> Bitcoin</p>
+                    <p class="item-foot"><i class="fa fa-credit-card pago" aria-hidden="true"></i> Tarjeta</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://use.fontawesome.com/dca8629fdb.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

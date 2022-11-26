@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="contenedor-nav" id="nav">
+        <div class="logo">
+            <div>
+                <a href="index.html"><img class="img-logo" src="./assets/img/logo.png" alt="" id="logoNav"></a>
+            </div>
+            <div class="container-search input-icono" id="searchNav">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="items-nav">
+            <button class="btnNav" id="rolBtn"><a class="linkBtn" href="index.html"> #rol</a></button>
+            <button class="btnNav" id="multijugadorBtn"><a class="linkBtn" href="index.html"> #multijugador</a></button>
+            <button class="btnNav" id="gratisBtn"><a class="linkBtn" href="index.html"> #gratis</a></button>
+            <button class="btnNav" id="variedadBtn"><a class="linkBtn" href="index.html"> #variedad</a></button>
+        </div>
+        <div class="icons">
+            <i class="fa fa-shopping-cart" id="cart" aria-hidden="true"></i>
+            <div class="container-hambur">
+                <button class="hambur">
+                    <span class="top-line"></span>
+                    <span class="middle-line"></span>
+                    <span class="bottom-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+	<div class="menu-hamburgesa">
+		<div class="container-hambur">
+			<div class="container-hambur-user">
+				<div class="img-user">
+					<img src="assets/img/profile.png" alt="">
+				</div>
+				<div class="name-user">
+					<h4>Doggy</h4>
+				</div>
+			</div>
+			<div class="container-redes">
+				<ul>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div class="container-items">
+				<ul>
+					<li><i class="fa fa-user" aria-hidden="true"></i> Perfil</li>
+					<li><i class="fa fa-bookmark" aria-hidden="true"></i> Guardados</li>
+					<li><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesion</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <img src="./assets/img/tablero.jpg" alt="" class="img-tablero">
+    <div class="bread spinner-on">
+		<h4>4 EN LINEA / <a href="index.html">HOME</a></h4>
+	</div>
+    <div class="container-carrito-games">
+		<div class="carrito-games">
+			<h3>Carrito de compras</h3>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/1.jpg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/2.jpeg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-cart">
+				<div class="card-carrito">
+					<div class="img-cart">
+						<img src="assets/img/paraTi/3.jpeg" alt="">
+					</div>
+					<div class="info-cart">
+						<h4>Nombre del jueg</h4>
+						<p>Descripcion</p>
+						<h6>$99</h6>
+					</div>
+					<div class="cantidades">
+						<p><i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+						<h6>01</h6>
+						<p><i class="fa fa-minus-circle" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="close-modal">
+                <i class="fa fa-times" id="cruz-modal" aria-hidden="true"></i>
+            </div>
+            <h2>Compartir</h2>
+            <div class="redes">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cuatroEnLinea">
+        <div class="container-cuatro">
+            <div class="title-juego">
+                <h2>4 En linea</h2>
+            </div>
+            <div class="fichas noneSize" id="fichasNone">
+                <div class="fichas1">
+                    <h4>Equipo Stark</h4>
+                    <img src="./assets/ficha2.png" alt="" class="ficha2 point">
+                    <img src="./assets/fichaVariant2.png" alt="" class="ficha2 point">
+                    <img src="./assets/fichaVariant1.png" alt="" class="ficha2 point">
+                </div>
+                <div class="fichas2">
+                    <h4>Equipo Noche</h4>
+                    <div>
+                        <img src="./assets/ficha1.png" alt="" class="ficha point">
+                        <img src="./assets/fichaVariant3.png" alt="" class="ficha point">
+                        <img src="./assets/fichaVariant4.png" alt="" class="ficha point">
+                    </div>
+                </div>
+            </div>
+            <div class="size-linea">
+                <div class="sizeGroup">
+                    <button class="size0 noneSize">Cambiar dimension</button>
+                    <button class="size4" value="8">4 en linea</button>
+                    <button class="size5" value="9">5 en linea</button>
+                    <button class="size6" value="10">6 en linea</button>
+                    <button class="size8" value="11">7 en linea</button>
+                </div>
+            </div>
+            <div class="timer">
+                <div>
+                    <h2 class="">Te quedan:</h2><h2 class="timerH4"></h2>
+                </div>
+            </div>
+            <div class="img-cuatroEnLinea">
+                <canvas id="canvasGame"></canvas>
+            </div>
+            <div class="buttons-juego">
+                <button class="jugar point" id="restartGame" disabled>Reiniciar</button>
+                <button class="comoJugar point"><a class="anchComo" href="#demo-modal">¿Como Jugar?</a></button>
+            </div>
+            <div class="compartir">
+                <h4 id="compartir-juego"><i class="fa fa-share" aria-hidden="true"></i> Compartir</h4>
+            </div>
+        </div>
+    </div>
+    <div class="videos-juego">
+        <div class="video">
+            <img src="assets/img/video1.png" alt="">
+            <div class="play">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="video">
+            <img src="assets/img/video2.png" alt="">
+            <div class="play">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-historia">
+        <h2 class="title-historia">Historia del Juego</h2>
+        <div class="cards-historia">
+            <div class="section-cards">
+                <div class="card-historia section-historia">
+                    <div class="card-header">
+                        <h5 class="title-card-history">4 en línea, Niemer. El juego original de 1981.
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="history-text">
+                            La historia de 4 en línea comienza ligada con la máquina de El fin del tiempo, que ha estado
+                            completamente desaparecida durante más de 35 años, hasta que un esfuerzo coordinado evitó
+                            que desapareciera para siempre.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-historia section-historia">
+                    <div class="card-header">
+                        <h5 class="title-card-history">Diez años después: 4 en línea, CicPlay (1991).
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="history-text">
+                            4 en línea, versión de 1991, captura de hardware real
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-gallery">
+                <ul class="slider">
+                    <img id="slide1" src="https://retrolaser.es/wp-content/uploads/2021/02/4enlinea-niemer-flyer-795x1024.jpg" alt="">
+                    <img id="slide2" src="https://retrolaser.es/wp-content/uploads/2021/02/4-en-linea-maquina-recreativa-741x1024.jpg" alt="">
+                    <img id="slide3" src="https://retrolaser.es/wp-content/uploads/2021/02/4-en-linea-01.jpg" alt="">
+                </ul>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#slide1">Niemer 1981</a></li>
+                        <li><a href="#slide2">CicPlay 1991</a></li>
+                        <li><a href="#slide3">CicPlay Hardware</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <h2 class="foro">Foro</h2>
+    <div class="zona-comentar">
+        <h6>Comentario</h6>
+        <input type="text" placeholder="Deja un comentario...">
+    </div>
+    <h5 class="foro">5 comentarios</h5>
+    <div class="comentarios">
+        <div class="container-comentario">
+            <div class="img-comentario">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="info-comentario">
+                <div class="name-fecha">
+                    <h5>Cesar23</h5>
+                    <h5 class="fecha">hace 1 mes</h5>
+                </div>
+                <div class="comentario">
+                    <p>Muy divertido!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-comentario">
+            <div class="img-comentario">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="info-comentario">
+                <div class="name-fecha">
+                    <h5>Cesar23</h5>
+                    <h5 class="fecha">hace 1 mes</h5>
+                </div>
+                <div class="comentario">
+                    <p>Muy divertido!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-comentario">
+            <div class="img-comentario">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="info-comentario">
+                <div class="name-fecha">
+                    <h5>Cesar23</h5>
+                    <h5 class="fecha">hace 1 mes</h5>
+                </div>
+                <div class="comentario">
+                    <p>Muy divertido!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-comentario">
+            <div class="img-comentario">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="info-comentario">
+                <div class="name-fecha">
+                    <h5>Cesar23</h5>
+                    <h5 class="fecha">hace 1 mes</h5>
+                </div>
+                <div class="comentario">
+                    <p>Muy divertido!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-comentario">
+            <div class="img-comentario">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="info-comentario">
+                <div class="name-fecha">
+                    <h5>Cesar23</h5>
+                    <h5 class="fecha">hace 1 mes</h5>
+                </div>
+                <div class="comentario">
+                    <p>Muy divertido!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedorFooter">
+            <div class="seccion-redes">
+                <img src="./assets/img/logo.png" class="logoFooter" alt="">
+                <div class="redes">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="items-footer">
+                <div class="item">
+                    <h4 class="titulos">Nosotros</h4>
+                    <p class="item-foot">¿Quienes somos?</p>
+                    <p class="item-foot">Compania</p>
+                    <p class="item-foot">Blog</p>
+                </div>
+                <div class="item">
+                    <h4 class="titulos">Ayuda</h4>
+                    <p class="item-foot">Preguntas Frecuentes</p>
+                    <p class="item-foot">Como comprar</p>
+                    <p class="item-foot">Contactanos</p>
+                </div>
+                <div class="item">
+                    <h4 class="titulos">Formas de pago</h4>
+                    <p class="item-foot"><i class="fa fa-paypal pago" aria-hidden="true"></i> PayPal</p>
+                    <p class="item-foot"><i class="fa fa-btc pago" aria-hidden="true"></i> Bitcoin</p>
+                    <p class="item-foot"><i class="fa fa-credit-card pago" aria-hidden="true"></i> Tarjeta</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="demo-modal" class="modal">
+		<div class="modal__content">
+            <div class="como-jugar-info">
+                <h1>Instrucciones del Juego</h1>
+                <div>
+                    <h4>Seleccion de Dimension y Fichas</h4>
+                    <ul>
+                        <li>Primero debes seleccionar la dimension deseada para el juego (4 en linea, 5 en linea, 6 en linea o 7 en linea).
+                            Luego debes seleccionar las fichas de los respectivos equipos.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cómo colocar las fichas</h4>
+                    <ul>
+                        <li>La regla para colocarlas consiste en que estas siempre "caen hasta abajo". Es decir una ficha puede ser colocada bien en la parte inferior de una columna o bien sobre otra de alguna otra columna.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cómo finalizar el juego</h4>
+                    <ul>
+                        <li>Uno de los jugadores coloca cuatro o más fichas en una línea contínua vertical, horizontal o diagonalmente. Este jugador gana la partida.</li>
+                        <li>Todas las casillas del tablero están ocupadas y ningún jugador cumple la condición anterior para ganar. En este caso la partida finaliza en empate.</li>
+                    </ul>
+                </div>
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+            <div class="como-jugar-img">
+                <h1>Tablero basado en la serie Game of Thrones</h1>
+                <div class="imgs">
+                    <img src="assets/img/como-jugar1.png" alt="" width="200">
+                    <img src="assets/img/tablero.jpg" alt="" width="200">
+                </div>
+                <p>Juego de tronos (en inglés, A Game of Thrones) es una novela de fantasía escrita por el autor estadounidense George R.
+                    R. Martin en 1996 y ganadora del premio Locus a la mejor novela de fantasía en 1997. Se trata de la primera entrega de la serie
+                    de gran popularidad Canción de hielo y fuego. La novela se caracteriza por su estética medieval,1​ la descripción de numerosos personajes bien detallados,
+                    la contraposición de puntos de vista de los múltiples protagonistas, su trama con giros inesperados y un uso sutil y moderado de los aspectos mágicos tan
+                    comunes en otras obras de fantasía heroica.
+                </p>
+            </div>
+		</div>
+	</div>
+    <script src="https://use.fontawesome.com/dca8629fdb.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Juego.js"></script>
+    <script src="js/Tablero.js"></script>
+    <script src="js/ficha.js"></script>
+    <script src="js/Menu.js"></script>
+</body>
+
+</html>

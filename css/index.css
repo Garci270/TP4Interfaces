@@ -1,0 +1,414 @@
+.container-spinner {
+	margin-top: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.spinner-circle {
+	width: 45px;
+	height: 45px;
+	margin: auto;
+	border: 6px #334077e5 solid;
+	border-top: 6px #ffff solid;
+	border-radius: 50%;
+	-webkit-animation: spCircRot .9s infinite linear;
+	animation: spCircRot .9s infinite linear;
+}
+
+
+
+@-webkit-keyframes spCircRot {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+@keyframes spCircRot {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.progress-bar {
+	margin: 6px;
+	color: #fff;
+}
+
+.text-progress {
+	margin: 6px;
+	color: #fff;
+}
+
+.progress-container {
+	display: flex;
+	align-items: center;
+	height: 0.8rem;
+	width: 15rem;
+	border-radius: 0.4rem;
+
+	background: rgb(0, 0, 0);
+}
+
+.progress-container .progress {
+	height: 100%;
+	width: 0;
+	border-radius: 0.4rem;
+
+	background: #285C6D;
+
+	transition: width 0.4s ease;
+}
+
+.spinner-on {
+	display: none;
+}
+
+.title-novedad {
+	display: flex;
+	justify-content: center;
+}
+
+.title-novedad h2 {
+	color: #ffff;
+}
+
+.img-lanzamiento {
+	cursor: pointer;
+	width: 100%;
+}
+
+.img-lanzamiento img {
+	width: 90%;
+	border-radius: 15px;
+	margin-left: 3%;
+}
+
+.info-lanzamiento {
+	width: 90%;
+	color: white;
+	padding: 10px;
+}
+
+.info-lanzamiento h2 {
+	color: red;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.carousel {
+	overflow-y: hidden;
+	width: 100%;
+	display: flex;
+	overflow-x: auto;
+}
+
+.title-carrousel {
+	color: white;
+	margin-left: 10px;
+	margin-top: 60px;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+	display: none;
+}
+
+.game {
+	width: 200px;
+	position: relative;
+	height: 150px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+.game img {
+	width: 200px;
+	object-fit: cover;
+	height: 150px;
+	border-radius: 10px;
+
+}
+
+.info-game {
+	color: white;
+	width: 200px;
+	position: absolute;
+	bottom: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: var(--primario) 0px -60px 36px -28px inset;
+}
+
+.zona-pagos{
+	display: flex;
+}
+
+.info-game *{
+	margin: 2px;
+}
+
+.info-game h3 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 7px;
+	width: 130px;
+}
+
+.info-game p {
+	font-size: 14px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 7px;
+}
+.comprado{
+	width: 50%;
+	display: flex;
+	justify-content: right;
+}
+.comprado button{
+	margin-top: 42px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--primario);
+	cursor: pointer;
+	width: 121px;
+	margin-left: -141px;
+}
+.comprado h4{
+	margin-top: 28px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.comprado button a{
+	text-decoration: none;
+	color: white;
+}
+
+.large {
+	width: 300px;
+	height: 200px;
+}
+
+.large img {
+	width: 300px;
+	height: 200px;
+
+}
+
+.large .info-game {
+	width: 300px;
+}
+
+.modal {
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(77, 77, 77, .7);
+	transition: all 0.4s;
+  }
+  
+  .modal:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .modal__content {
+	border-radius: 4px;
+	position: relative;
+	width: 300px;
+	max-width: 90%;
+	background: #333F77;
+	padding: 1em 2em;
+  }
+
+  .modal__content p, h1{
+	color: white;
+  }
+  
+  .modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: white;
+	text-decoration: none;
+  }
+
+@media only screen and (min-width:1024px) {
+	.modal__content {
+		width: 500px;
+		max-width: 90%;
+	  }
+
+	.container-spinner {
+		margin-top: 15%;
+	}
+
+	.progress-container {
+		display: flex;
+		align-items: center;
+		height: 0.8rem;
+		width: 32rem;
+		border-radius: 0.4rem;
+		background: rgb(0, 0, 0);
+	}
+
+	.title-novedad {
+		display: block;
+		margin-left: 18%;
+		margin-bottom: -1%;
+	}
+
+	.container-lanzamiento {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.container-lanzamiento * {
+		margin: 25px;
+	}
+
+	.img-lanzamiento {
+		width: 500px;
+	}
+
+	.img-lanzamiento img {
+		width: 500px;
+	}
+
+	.info-lanzamiento {
+		width: 35%;
+	}
+
+	.title-carrousel {
+		font-size: 30px;
+		margin-bottom: -8%;
+		margin-left: 5%;
+	}
+	.games-recomendadas {
+		width: 100%;
+		justify-content: center;
+		display: flex;
+	}
+
+	.games-recomendadas .contenedor-principal {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-top: 10%;
+	}
+
+	.flecha-izquierda,
+	.flecha-derecha {
+		display: block;
+		border: none;
+		background: transparent;
+		font-size: 40px;
+		height: 50%;
+		top: calc(50% - 25%);
+		line-height: 40px;
+		width: 50px;
+		color: #334077e5;
+		cursor: pointer;
+		z-index: 500;
+		transition: .2s ease all;
+	}
+
+	.flecha-izquierda:hover,
+	.flecha-derecha:hover {
+		color: #483177;
+	}
+
+	.flecha-izquierda {
+		left: 0;
+	}
+
+	.flecha-derecha {
+		right: 0;
+	}
+
+	.game {
+		overflow: hidden;
+		margin: 5px;
+		width: 300px;
+		height: 150px;
+		display: none;
+	}
+
+	.game img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.info-game {
+		width: 300px;
+		margin-top: 100px;
+	}
+
+	.info-game p {
+		font-size: 14px;
+	}
+
+	.info-game h3 {
+		width: 200px;
+	}
+
+
+	.large {
+		overflow: hidden;
+		width: 380px;
+		height: 240px;
+	}
+
+	.large img {
+		width: 380px;
+		height: 240px;
+	}
+
+	.large .info-game {
+		color: white;
+		width: 380px;
+		bottom: 0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		position: absolute;
+		box-shadow: var(--primario) 0px -60px 36px -28px inset;
+	}
+
+	.comprado{
+		margin-left: -40px;
+	}
+	.comprado h4{
+		margin-top: 50px;
+		font-size: 14px;
+	}
+	.comprado button{
+		width: 125px;
+		height: 25px;
+	}
+	.comprado button a{
+		font-size: 11px;
+	}
+	.active{
+		display: block;
+	}
+}
